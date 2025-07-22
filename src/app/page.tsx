@@ -13,7 +13,7 @@ export default function Home() {
       <NavBar/> 
       <div className="flex h-screen justify-center gap-40"> 
         <SideBar setCurrentTasks={setCurrentTasks}/>
-        <Tasks currentTasks={currentTasks} setCurrentTasks={setCurrentTasks}/>
+        <Tasks currentTasks={currentTasks}/>
       </div>
     </div>
   );
