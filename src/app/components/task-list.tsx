@@ -9,10 +9,9 @@ import { DatePickerChange } from "./date-picker-change";
 
 interface TaskListProps {
     currentTasks : string,
-    setCurrentTasks: React.Dispatch<React.SetStateAction<"all" | "important">>
 }
 
-const TaskList = ({ currentTasks, setCurrentTasks }: TaskListProps) => {
+const TaskList = ({ currentTasks }: TaskListProps) => {
   const tasks = useQuery(api.tasksAndProjectsGet.getTasks);
 
   if (!tasks) {

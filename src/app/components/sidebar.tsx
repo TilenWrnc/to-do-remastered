@@ -1,11 +1,10 @@
 import AddButton from "./add-buttons";
 
 interface SideBarProps {
-    currentTasks : string,
     setCurrentTasks: React.Dispatch<React.SetStateAction<"all" | "important">>
 }
 
-const SideBar = ({ currentTasks, setCurrentTasks } : SideBarProps) => {
+const SideBar = ({ setCurrentTasks } : SideBarProps) => {
 
     return (
         <div>
